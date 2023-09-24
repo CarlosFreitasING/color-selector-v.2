@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"></head>
+<body>
+    
+    <div class="container mt-5 text-center">
+        <label for="inputColor" class="form-label">Color picker</label>
+        <input type="color" class="form-control form-control-color" id="inputColor" value="#563d7c" title="Choose your color">
+    
+        <div class="mt-3">
+            <button class="btn btn-primary w-100" id="btnVisualizar" >VISUALIZAR</button>
+
+            <p class="lead mt-3" id="parrafoExa">#563d7c</p>
+
+            <div class="card p-5" id="cardColor" style="background-color:#563d7c;"></div>
+        </div>
+    </div>
+
+    <script src="js/app3.js" ></script>
+</body>
+</html>
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    Si lo pones aqui se carga primero el js que el h1 entonces da error-->
+    <!--<script src="app.js" ></script>-->
+    <!--La alternativa para ir aqui el src usar DOMContentLoaded y addEventListener-->
+
+    <!--<script src="app.js" defer></script>-->
+    <!--defer es otra alternativa, esto indica al navegador que no espere por el script, que siga procesando el 
+    html y el script carga en segundo plano y se ejecuta cuando el DOM esta completo -->
+    <!--Los scripts con defer se ejecutan cuando el DOM cargue pero antes del evento DOMContentLoaded-->
+<!-- 
+</head>
+<body>
+
+    <h1 id="tituloweb" class="text-primary">lorem, ipsum dolor</h1>
+    <button class="btn btn-primary">Cambiar texto</button>
+
+    <div class="container">
+        <p class="text-danger">Lorem, impsum dolor 1</p>
+        <p class="text-danger">Lorem, impsum dolor 2</p>
+        <p class="text-danger">Lorem, impsum dolor 3</p>
+    </div>
+
+    <p class="text-danger">Esta fuera del container</p>
+
+
+    <script src="app2.js" ></script>
+</body>
+</html>  -->
